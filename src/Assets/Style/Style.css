@@ -1,0 +1,23 @@
+.bg-1 {
+    background-color: #f4c95d;
+    color: whitesmoke;
+}
+
+.color-1 {
+    color: #04030f;
+}
+
+#recipe-description {
+    max-height: 100px;
+    display: -webkit-box;
+    max-width: auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card:hover {
+    border: 1px solid black;
+    outline: #00a3ff solid 1px;
+    text-align: center;
+}
