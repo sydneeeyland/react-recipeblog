@@ -17,7 +17,11 @@
 }
 
 .card:hover {
-    border: 1px solid black;
-    outline: #00a3ff solid 1px;
+    border: 1px solid;
+    outline: #a5b9c5 1px;
     text-align: center;
+}
+
+#body {
+    padding-top: 90px
 }

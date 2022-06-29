@@ -10,11 +10,11 @@ import Footer from '../Components/Footer';
 function Main() {
   return (
     <React.Fragment>
-      <nav className='bg-1'>
+      <nav className='bg-light text-dark shadow-sm fixed-top'>
         <Navigation />
       </nav>
 
-      <main>
+      <main id='body'>
         <Outlet />
       </main>
     </React.Fragment>
