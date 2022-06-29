@@ -10,6 +10,7 @@ function Recipe() {
       "id": "1",
       "recipe": "Beef and Mustard Pie",
       "image": "https://panlasangpinoy.com/wp-content/uploads/2022/02/chicken-tinola-sotanghon.jpg",
+      "video": "https://youtu.be/nNUiUWSmgtc",
       "ingredients": [
         "8 ounches boneless chicken breast",
         "5 ounces sotanghon noodles",
@@ -39,9 +40,9 @@ function Recipe() {
     <React.Fragment>
       <section className='container-fluid'>
         {
-          recipeDetails.filter(x => x.id == id).length > 0 ? 
+          recipeDetails.filter(x => x.id === id).length > 0 ? 
           recipeDetails.map((items) => 
-            <RecipeDetails image={items.image} recipe={items.recipe} ingredients={items.ingredients} preparation={items.prepartion} />
+            <RecipeDetails image={items.image} recipe={items.recipe} ingredients={items.ingredients} preparation={items.prepartion} video={items.video} />
           )
           : 'Content Unavailable'
         }

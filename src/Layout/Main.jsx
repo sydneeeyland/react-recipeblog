@@ -5,7 +5,6 @@ import { Outlet } from "react-router-dom";
 import Navigation from '../Components/Navigation';
 
 import '../Assets/Style/Style.css';
-import Footer from '../Components/Footer';
 
 function Main() {
   return (
