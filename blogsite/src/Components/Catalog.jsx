@@ -8,7 +8,7 @@ function Catalog({data}) {
           {
             data.map(items => 
               <section className='col-xxl-3 pb-3' key={items._id}>
-                <a href={`/recipe/${items.id}`} className='text-decoration-none text-dark'>
+                <a href={`/recipe/${items._id}`} className='text-decoration-none text-dark'>
                   <div className="card shadow-sm">
                     <img src={items.image} height='230px' /> 
                     <div className="card-body">
