@@ -1,5 +1,4 @@
 const config = require("./config");
-
 const app = config.express();
 const { errorHandler } = require("./middleware/errorMiddleware");
 const startDatabase = require("./database/dbconfig");
