@@ -10,7 +10,7 @@ function Navigation() {
               <a href='/' className='text-decoration-none text-dark'>Home</a>
             </li>
             <li>
-              <a href='/' className='text-decoration-none text-dark'>Submit Recipe</a>
+              <a href='/recipe/create' className='text-decoration-none text-dark'>Submit Recipe</a>
             </li>
           </ul>
         </article>

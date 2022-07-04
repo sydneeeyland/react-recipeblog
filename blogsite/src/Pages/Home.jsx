@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Catalog from '../Components/Catalog'
+import Call from '../Api/CallAPI';
 
 function Home() {
     const [recipe, setRecipe] = useState();
-
+    
     useEffect(() => {
         const GetData = async () => {
-            const response = await fetch('http://localhost:3003/catalog/');
-            const data = await response.json();
+            const data = await Call("http://localhost:3003/catalog/");
             setRecipe(data);
         }
         GetData();
@@ -16,7 +16,7 @@ function Home() {
     return (
         <React.Fragment>
             <section className='container mx-auto pt-2'>
-                { typeof recipe != 'undefined' ? <Catalog data={recipe} /> : '0' }
+                { recipe ?  <Catalog data={recipe} /> : 'Loading' }
             </section>
         </React.Fragment>
     )
