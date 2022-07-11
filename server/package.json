@@ -8,7 +8,9 @@
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.4.2",
-    "nodemon": "^2.0.18"
+    "mssql": "^8.1.2",
+    "nodemon": "^2.0.18",
+    "typeorm": "^0.3.7"
   },
   "devDependencies": {},
   "scripts": {

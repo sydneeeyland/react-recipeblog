@@ -7,7 +7,7 @@ function Home() {
     
     useEffect(() => {
         const GetData = async () => {
-            const data = await Call("http://localhost:3003/catalog/");
+            const data = await Call("http://localhost:4000/catalog/");
             setRecipe(data);
         }
         GetData();

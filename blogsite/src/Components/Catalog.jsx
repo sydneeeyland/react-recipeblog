@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Catalog({data}) {
+  console.log(data);
   return (
     <React.Fragment>
       <section className='col-xxl-12'>

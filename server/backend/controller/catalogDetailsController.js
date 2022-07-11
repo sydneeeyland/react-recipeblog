@@ -2,6 +2,7 @@ const asyncHandler = require('express-async-handler');
 const CatalogDetailsSchema = require('../models/catalogDetailsModel');
 
 var CatalogDetailsController = {
+    
     // @desc    Get specific catalog
     // @route   GET /catalog/:id
     // @access  PUBLIC

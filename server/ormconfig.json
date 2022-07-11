@@ -1,0 +1,20 @@
+{ 
+    "type": "mssql", 
+    "host": "SERVER4", 
+    "port": 1433, 
+    "username": "sa", 
+    "password": "chnv7Adminsql2020", 
+    "database": "TestDB", 
+    "synchronize": true, 
+    "logging": false, 
+    "entities": [
+       "src/entity/**/*.ts" 
+    ], 
+    "migrations": [ "src/migration/**/*.ts" 
+    ], 
+    "subscribers": [ "src/subscriber/**/*.ts" 
+    ], 
+    "cli": { 
+       "entitiesDir": "src/entity", "migrationsDir": "src/migration", "subscribersDir": "src/subscriber" 
+    } 
+ }

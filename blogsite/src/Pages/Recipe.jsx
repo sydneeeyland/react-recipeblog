@@ -11,7 +11,7 @@ function Recipe() {
 
   useEffect(() => {
     const GetData = async() => {
-      const data = await Call(`http://localhost:3003/catalog/${id}`)
+      const data = await Call(`http://localhost:4000/catalog/${id}`)
       setDetails(data[0]);
     }
 
